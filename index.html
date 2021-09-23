@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <title>Document</title>
+    <style> 
+        h1 {
+            color: red
+        }
+        #idselector   {
+            color: blue
+        } 
+        .class {
+            color: green
+        }
+        .class1.class2 {
+            color: yellow
+        }
+        ul li {
+            color: pink
+        }
+       .list > .firstline{
+           color: aqua
+       }
+       .firstline + .secondline {
+            color: blueviolet
+       }
+       .secondline ~ .thirdline{
+           color: orange
+       }
+       [href] {
+           color:cornflowerblue
+       }
+       [href="https://webref.ru/css/selector/attr2"] {
+           color: brown
+       }
+       [href$="/attr4"] {
+           color:fuchsia
+       }
+    </style>
+</head>
+<body>
+    <h1>Селекторы</h1>
+    <p> A - Селектор по элементу предназначен для выбора элементов по имени тега </p>
+    <p id="idselector"> #id - Селектор по идентификатору предназначен для выбора элемента по идентификатору (значению атрибута id)</p>
+    <p class="class">.class - Селектор по классу предназначен для выбора элементов по классу (значению атрибута class)</p>
+    <p class="class1 class2">.class1.class2 - Селектор для элементов, у которых одновременно заданы несколько классов</p>
+    <p>* - Универсальный селектор (селектор звёздочка) предназначен для выбора всех элементов.</p>
+    <p>
+        <ul>
+            <li>A   B - Селектор для элемента, который находится где-либо внутри другого элемента</li>
+        </ul>
+    </p>
+    <p>
+        <ol class="list">
+            <li class="firstline">A > B - Дочерний селектор для элемента, который находится непосредственно внутри другого элемента</li>
+            <li class="secondline">A + B - Соседний селектор для элемента, который находится первый следом за другим элементом</li>
+            <li class="thirdline">A ~ B - Родственный селектор для элементов, которые находятся следом за другим элементом</li>
+        </ol>
+    </p>
+    <p> <a href="https://webref.ru/css/selector/attr"> [attr] </a> - Селекторы по атрибуту предназначены для выбора элементов по имени атрибута</p>
+    <p> <a href="https://webref.ru/css/selector/attr2"> [attr='value'] </a> - Селектор по имени и значению атрибута</p>
+    <p>[attr^='value'] - Селектор по имени атрибута и значению, с которого оно должно начинаться</p>
+    <p> <a href="https://webref.ru/css/selector/attr4"> [attr$='value'] </a> - Селектор по имени атрибута и значению, на которое оно должно заканчиваться</p>
+    <p>[attr*='value'] - Селектор о указанному атрибуту и значению, которое должно содержать value</p>
+    <P>[attr~='value'] - Селектр по имени атрибута и значению, которое содержит value отделённое от других с помощью пробела</P>
+    <p>[attr|='value'] - Селектор по имени атрибута и его значению, которое равно value или начинается со value</p>
+</body>
+</html>
